@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		362380CB2051447100C27205 /* OLFlipViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380BA2051447000C27205 /* OLFlipViewController.h */; };
+		362380CC2051447100C27205 /* OLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 362380BB2051447000C27205 /* OLAnimation.m */; };
+		362380CD2051447100C27205 /* UIImage+SPhotoBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 362380BC2051447000C27205 /* UIImage+SPhotoBook.m */; };
+		362380CE2051447100C27205 /* UIImage+SPhotoBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380BD2051447000C27205 /* UIImage+SPhotoBook.h */; };
+		362380CF2051447100C27205 /* OLFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 362380BE2051447000C27205 /* OLFlipTransition.m */; };
+		362380D02051447100C27205 /* SPhotobookContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380BF2051447000C27205 /* SPhotobookContentViewController.h */; };
+		362380D12051447100C27205 /* OLFlipTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380C02051447000C27205 /* OLFlipTransition.h */; };
+		362380D22051447100C27205 /* OLTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380C12051447000C27205 /* OLTransition.h */; };
+		362380D32051447100C27205 /* SPhotoBookViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380C22051447100C27205 /* SPhotoBookViewController.h */; };
+		362380D42051447100C27205 /* SPhotoBookKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362380C32051447100C27205 /* SPhotoBookKit.xcassets */; };
+		362380D52051447100C27205 /* SPhotoBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 362380C42051447100C27205 /* SPhotoBookViewController.m */; };
+		362380D62051447100C27205 /* OLTransitionEnumerations.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380C52051447100C27205 /* OLTransitionEnumerations.h */; };
+		362380D72051447100C27205 /* OLAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380C62051447100C27205 /* OLAnimation.h */; };
+		362380D82051447100C27205 /* OLFlipEnumerations.h in Headers */ = {isa = PBXBuildFile; fileRef = 362380C72051447100C27205 /* OLFlipEnumerations.h */; };
+		362380D92051447100C27205 /* SPhotobookContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 362380C82051447100C27205 /* SPhotobookContentViewController.m */; };
+		362380DA2051447100C27205 /* OLFlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 362380C92051447100C27205 /* OLFlipViewController.m */; };
+		362380DB2051447100C27205 /* OLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 362380CA2051447100C27205 /* OLTransition.m */; };
+		362383CA205148BF00C27205 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B0205148BF00C27205 /* MASCompositeConstraint.h */; };
+		362383CB205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383B1205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		362383CC205148BF00C27205 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B2205148BF00C27205 /* MASConstraint+Private.h */; };
+		362383CD205148BF00C27205 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B3205148BF00C27205 /* MASLayoutConstraint.h */; };
+		362383CE205148BF00C27205 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B4205148BF00C27205 /* NSArray+MASShorthandAdditions.h */; };
+		362383CF205148BF00C27205 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B5205148BF00C27205 /* MASConstraintMaker.h */; };
+		362383D0205148BF00C27205 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B6205148BF00C27205 /* View+MASAdditions.h */; };
+		362383D1205148BF00C27205 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B7205148BF00C27205 /* NSArray+MASAdditions.h */; };
+		362383D2205148BF00C27205 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B8205148BF00C27205 /* MASUtilities.h */; };
+		362383D3205148BF00C27205 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383B9205148BF00C27205 /* MASViewAttribute.h */; };
+		362383D4205148BF00C27205 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383BA205148BF00C27205 /* ViewController+MASAdditions.m */; };
+		362383D5205148BF00C27205 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383BB205148BF00C27205 /* MASViewConstraint.h */; };
+		362383D6205148BF00C27205 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383BC205148BF00C27205 /* MASConstraint.h */; };
+		362383D7205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383BD205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.h */; };
+		362383D8205148BF00C27205 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383BE205148BF00C27205 /* MASCompositeConstraint.m */; };
+		362383D9205148BF00C27205 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383BF205148BF00C27205 /* MASConstraintMaker.m */; };
+		362383DA205148C000C27205 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383C0205148BF00C27205 /* MASLayoutConstraint.m */; };
+		362383DB205148C000C27205 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383C1205148BF00C27205 /* NSArray+MASAdditions.m */; };
+		362383DC205148C000C27205 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383C2205148BF00C27205 /* View+MASAdditions.m */; };
+		362383DD205148C000C27205 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383C3205148BF00C27205 /* View+MASShorthandAdditions.h */; };
+		362383DE205148C000C27205 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383C4205148BF00C27205 /* Masonry.h */; };
+		362383DF205148C000C27205 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383C5205148BF00C27205 /* MASConstraint.m */; };
+		362383E0205148C000C27205 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 362383C6205148BF00C27205 /* ViewController+MASAdditions.h */; };
+		362383E1205148C000C27205 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383C7205148BF00C27205 /* MASViewConstraint.m */; };
+		362383E2205148C000C27205 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 362383C8205148BF00C27205 /* MASViewAttribute.m */; };
+		362383E3205148C000C27205 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 362383C9205148BF00C27205 /* Info.plist */; };
+		36A7D8A72026DD6900F2E2F3 /* SPhotoBookKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A7D8A52026DD6900F2E2F3 /* SPhotoBookKit.h */; };
+		36A7D8A82026DD6900F2E2F3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36A7D8A62026DD6900F2E2F3 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3601B55B200C90960011CCAE /* SPhotoBookKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPhotoBookKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		362380BA2051447000C27205 /* OLFlipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLFlipViewController.h; sourceTree = "<group>"; };
+		362380BB2051447000C27205 /* OLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLAnimation.m; sourceTree = "<group>"; };
+		362380BC2051447000C27205 /* UIImage+SPhotoBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SPhotoBook.m"; sourceTree = "<group>"; };
+		362380BD2051447000C27205 /* UIImage+SPhotoBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SPhotoBook.h"; sourceTree = "<group>"; };
+		362380BE2051447000C27205 /* OLFlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLFlipTransition.m; sourceTree = "<group>"; };
+		362380BF2051447000C27205 /* SPhotobookContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPhotobookContentViewController.h; sourceTree = "<group>"; };
+		362380C02051447000C27205 /* OLFlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLFlipTransition.h; sourceTree = "<group>"; };
+		362380C12051447000C27205 /* OLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTransition.h; sourceTree = "<group>"; };
+		362380C22051447100C27205 /* SPhotoBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPhotoBookViewController.h; sourceTree = "<group>"; };
+		362380C32051447100C27205 /* SPhotoBookKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SPhotoBookKit.xcassets; sourceTree = "<group>"; };
+		362380C42051447100C27205 /* SPhotoBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPhotoBookViewController.m; sourceTree = "<group>"; };
+		362380C52051447100C27205 /* OLTransitionEnumerations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTransitionEnumerations.h; sourceTree = "<group>"; };
+		362380C62051447100C27205 /* OLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLAnimation.h; sourceTree = "<group>"; };
+		362380C72051447100C27205 /* OLFlipEnumerations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLFlipEnumerations.h; sourceTree = "<group>"; };
+		362380C82051447100C27205 /* SPhotobookContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPhotobookContentViewController.m; sourceTree = "<group>"; };
+		362380C92051447100C27205 /* OLFlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLFlipViewController.m; sourceTree = "<group>"; };
+		362380CA2051447100C27205 /* OLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTransition.m; sourceTree = "<group>"; };
+		362383B0205148BF00C27205 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		362383B1205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		362383B2205148BF00C27205 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		362383B3205148BF00C27205 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		362383B4205148BF00C27205 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		362383B5205148BF00C27205 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		362383B6205148BF00C27205 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		362383B7205148BF00C27205 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		362383B8205148BF00C27205 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		362383B9205148BF00C27205 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		362383BA205148BF00C27205 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		362383BB205148BF00C27205 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		362383BC205148BF00C27205 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		362383BD205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		362383BE205148BF00C27205 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		362383BF205148BF00C27205 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		362383C0205148BF00C27205 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		362383C1205148BF00C27205 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		362383C2205148BF00C27205 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		362383C3205148BF00C27205 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		362383C4205148BF00C27205 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		362383C5205148BF00C27205 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		362383C6205148BF00C27205 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		362383C7205148BF00C27205 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		362383C8205148BF00C27205 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		362383C9205148BF00C27205 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36A7D8A52026DD6900F2E2F3 /* SPhotoBookKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPhotoBookKit.h; sourceTree = "<group>"; };
+		36A7D8A62026DD6900F2E2F3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AC080BAECAB354EA2AB984 /* SPhotoBookKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SPhotoBookKit.podspec; path = ../SPhotoBookKit.podspec; sourceTree = "<group>"; };
+		E5DD3E3CB25BA5F3A988CD90 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EB825BD53AF065E6DED36A77 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3601B557200C90960011CCAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3601B551200C90960011CCAE = {
+			isa = PBXGroup;
+			children = (
+				36B6681D200DAFCC0064CEE5 /* SPhotoBookKitMetadata */,
+				36A7D8A42026DD6900F2E2F3 /* SPhotoBookKit */,
+				3601B55C200C90960011CCAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3601B55C200C90960011CCAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3601B55B200C90960011CCAE /* SPhotoBookKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		362383AF205148BF00C27205 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				362383B0205148BF00C27205 /* MASCompositeConstraint.h */,
+				362383B1205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				362383B2205148BF00C27205 /* MASConstraint+Private.h */,
+				362383B3205148BF00C27205 /* MASLayoutConstraint.h */,
+				362383B4205148BF00C27205 /* NSArray+MASShorthandAdditions.h */,
+				362383B5205148BF00C27205 /* MASConstraintMaker.h */,
+				362383B6205148BF00C27205 /* View+MASAdditions.h */,
+				362383B7205148BF00C27205 /* NSArray+MASAdditions.h */,
+				362383B8205148BF00C27205 /* MASUtilities.h */,
+				362383B9205148BF00C27205 /* MASViewAttribute.h */,
+				362383BA205148BF00C27205 /* ViewController+MASAdditions.m */,
+				362383BB205148BF00C27205 /* MASViewConstraint.h */,
+				362383BC205148BF00C27205 /* MASConstraint.h */,
+				362383BD205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				362383BE205148BF00C27205 /* MASCompositeConstraint.m */,
+				362383BF205148BF00C27205 /* MASConstraintMaker.m */,
+				362383C0205148BF00C27205 /* MASLayoutConstraint.m */,
+				362383C1205148BF00C27205 /* NSArray+MASAdditions.m */,
+				362383C2205148BF00C27205 /* View+MASAdditions.m */,
+				362383C3205148BF00C27205 /* View+MASShorthandAdditions.h */,
+				362383C4205148BF00C27205 /* Masonry.h */,
+				362383C5205148BF00C27205 /* MASConstraint.m */,
+				362383C6205148BF00C27205 /* ViewController+MASAdditions.h */,
+				362383C7205148BF00C27205 /* MASViewConstraint.m */,
+				362383C8205148BF00C27205 /* MASViewAttribute.m */,
+				362383C9205148BF00C27205 /* Info.plist */,
+			);
+			name = Masonry;
+			path = ../Carthage/Checkouts/Masonry/Masonry;
+			sourceTree = "<group>";
+		};
+		36A7D8A42026DD6900F2E2F3 /* SPhotoBookKit */ = {
+			isa = PBXGroup;
+			children = (
+				362383AF205148BF00C27205 /* Masonry */,
+				362380C62051447100C27205 /* OLAnimation.h */,
+				362380BB2051447000C27205 /* OLAnimation.m */,
+				362380C72051447100C27205 /* OLFlipEnumerations.h */,
+				362380C02051447000C27205 /* OLFlipTransition.h */,
+				362380BE2051447000C27205 /* OLFlipTransition.m */,
+				362380BA2051447000C27205 /* OLFlipViewController.h */,
+				362380C92051447100C27205 /* OLFlipViewController.m */,
+				362380C12051447000C27205 /* OLTransition.h */,
+				362380CA2051447100C27205 /* OLTransition.m */,
+				362380C52051447100C27205 /* OLTransitionEnumerations.h */,
+				362380BF2051447000C27205 /* SPhotobookContentViewController.h */,
+				362380C82051447100C27205 /* SPhotobookContentViewController.m */,
+				362380C32051447100C27205 /* SPhotoBookKit.xcassets */,
+				362380C22051447100C27205 /* SPhotoBookViewController.h */,
+				362380C42051447100C27205 /* SPhotoBookViewController.m */,
+				362380BD2051447000C27205 /* UIImage+SPhotoBook.h */,
+				362380BC2051447000C27205 /* UIImage+SPhotoBook.m */,
+				36A7D8A52026DD6900F2E2F3 /* SPhotoBookKit.h */,
+				36A7D8A62026DD6900F2E2F3 /* Info.plist */,
+			);
+			name = SPhotoBookKit;
+			path = ../SPhotoBookKit;
+			sourceTree = "<group>";
+		};
+		36B6681D200DAFCC0064CEE5 /* SPhotoBookKitMetadata */ = {
+			isa = PBXGroup;
+			children = (
+				D2AC080BAECAB354EA2AB984 /* SPhotoBookKit.podspec */,
+				E5DD3E3CB25BA5F3A988CD90 /* README.md */,
+				EB825BD53AF065E6DED36A77 /* LICENSE */,
+			);
+			name = SPhotoBookKitMetadata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3601B558200C90960011CCAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362380D62051447100C27205 /* OLTransitionEnumerations.h in Headers */,
+				362383CF205148BF00C27205 /* MASConstraintMaker.h in Headers */,
+				362383D6205148BF00C27205 /* MASConstraint.h in Headers */,
+				362380D22051447100C27205 /* OLTransition.h in Headers */,
+				362383CD205148BF00C27205 /* MASLayoutConstraint.h in Headers */,
+				362380D32051447100C27205 /* SPhotoBookViewController.h in Headers */,
+				362380D72051447100C27205 /* OLAnimation.h in Headers */,
+				362380D12051447100C27205 /* OLFlipTransition.h in Headers */,
+				362383D2205148BF00C27205 /* MASUtilities.h in Headers */,
+				36A7D8A72026DD6900F2E2F3 /* SPhotoBookKit.h in Headers */,
+				362380CB2051447100C27205 /* OLFlipViewController.h in Headers */,
+				362383D5205148BF00C27205 /* MASViewConstraint.h in Headers */,
+				362380CE2051447100C27205 /* UIImage+SPhotoBook.h in Headers */,
+				362383D1205148BF00C27205 /* NSArray+MASAdditions.h in Headers */,
+				362383CA205148BF00C27205 /* MASCompositeConstraint.h in Headers */,
+				362383CC205148BF00C27205 /* MASConstraint+Private.h in Headers */,
+				362383DE205148C000C27205 /* Masonry.h in Headers */,
+				362383D7205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				362380D82051447100C27205 /* OLFlipEnumerations.h in Headers */,
+				362383DD205148C000C27205 /* View+MASShorthandAdditions.h in Headers */,
+				362380D02051447100C27205 /* SPhotobookContentViewController.h in Headers */,
+				362383E0205148C000C27205 /* ViewController+MASAdditions.h in Headers */,
+				362383CE205148BF00C27205 /* NSArray+MASShorthandAdditions.h in Headers */,
+				362383D0205148BF00C27205 /* View+MASAdditions.h in Headers */,
+				362383D3205148BF00C27205 /* MASViewAttribute.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3601B55A200C90960011CCAE /* SPhotoBookKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3601B56F200C90960011CCAE /* Build configuration list for PBXNativeTarget "SPhotoBookKit" */;
+			buildPhases = (
+				3601B556200C90960011CCAE /* Sources */,
+				3601B557200C90960011CCAE /* Frameworks */,
+				3601B558200C90960011CCAE /* Headers */,
+				3601B559200C90960011CCAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPhotoBookKit;
+			productName = SPhotoBookKit;
+			productReference = 3601B55B200C90960011CCAE /* SPhotoBookKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3601B552200C90960011CCAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ZhiweiSun;
+				TargetAttributes = {
+					3601B55A200C90960011CCAE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 3601B555200C90960011CCAE /* Build configuration list for PBXProject "SPhotoBookKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3601B551200C90960011CCAE;
+			productRefGroup = 3601B55C200C90960011CCAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3601B55A200C90960011CCAE /* SPhotoBookKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3601B559200C90960011CCAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362380D42051447100C27205 /* SPhotoBookKit.xcassets in Resources */,
+				36A7D8A82026DD6900F2E2F3 /* Info.plist in Resources */,
+				362383E3205148C000C27205 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3601B556200C90960011CCAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362380DA2051447100C27205 /* OLFlipViewController.m in Sources */,
+				362380D92051447100C27205 /* SPhotobookContentViewController.m in Sources */,
+				362383DB205148C000C27205 /* NSArray+MASAdditions.m in Sources */,
+				362380DB2051447100C27205 /* OLTransition.m in Sources */,
+				362383E2205148C000C27205 /* MASViewAttribute.m in Sources */,
+				362380D52051447100C27205 /* SPhotoBookViewController.m in Sources */,
+				362383DA205148C000C27205 /* MASLayoutConstraint.m in Sources */,
+				362383DC205148C000C27205 /* View+MASAdditions.m in Sources */,
+				362383D8205148BF00C27205 /* MASCompositeConstraint.m in Sources */,
+				362380CC2051447100C27205 /* OLAnimation.m in Sources */,
+				362383D4205148BF00C27205 /* ViewController+MASAdditions.m in Sources */,
+				362380CF2051447100C27205 /* OLFlipTransition.m in Sources */,
+				362380CD2051447100C27205 /* UIImage+SPhotoBook.m in Sources */,
+				362383D9205148BF00C27205 /* MASConstraintMaker.m in Sources */,
+				362383CB205148BF00C27205 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				362383DF205148C000C27205 /* MASConstraint.m in Sources */,
+				362383E1205148C000C27205 /* MASViewConstraint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3601B56D200C90960011CCAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_SPhotoBookKit_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3601B56E200C90960011CCAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_SPhotoBookKit_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3601B570200C90960011CCAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ../SPhotoBookKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.SPhotoBookKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3601B571200C90960011CCAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ../SPhotoBookKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.SPhotoBookKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3601B555200C90960011CCAE /* Build configuration list for PBXProject "SPhotoBookKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3601B56D200C90960011CCAE /* Debug */,
+				3601B56E200C90960011CCAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3601B56F200C90960011CCAE /* Build configuration list for PBXNativeTarget "SPhotoBookKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3601B570200C90960011CCAE /* Debug */,
+				3601B571200C90960011CCAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3601B552200C90960011CCAE /* Project object */;
+}

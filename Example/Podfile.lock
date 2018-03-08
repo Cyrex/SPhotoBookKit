@@ -1,0 +1,31 @@
+PODS:
+  - DFARecordKit (1.0.2)
+  - Masonry (1.1.0)
+  - Reveal-SDK (13)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
+  - SPhotoBookKit (1.0.0):
+    - Masonry
+    - SDWebImage
+
+DEPENDENCIES:
+  - DFARecordKit
+  - Masonry (= 1.1.0)
+  - Reveal-SDK (~> 13)
+  - SPhotoBookKit (from `../`)
+
+EXTERNAL SOURCES:
+  SPhotoBookKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DFARecordKit: 5f9df09b4ab450021811c13c9b704acc01f79223
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Reveal-SDK: ccc2b0f8014965ea448b7534a7c2c8da232b75e8
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
+  SPhotoBookKit: 5f316c0059427a3e3bde27fb1e8cf2e4a6d87199
+
+PODFILE CHECKSUM: 85edef93348fef1c67133f8a71fe1327167bac0e
+
+COCOAPODS: 1.4.0
