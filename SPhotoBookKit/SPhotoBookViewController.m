@@ -179,6 +179,60 @@ static const CGFloat kBookEdgePadding = 38;
     }
 }
 
+- (void)closeBookPhotoManual {
+    if (!self.bookClosed && !self.animating) {
+        [self scrollBookViewControllerToIndex:0];
+
+        if (self.animating){
+            return;
+        }
+        self.animating = YES;
+
+        [self setUpBookCoverViewForFrontCover:YES];
+        self.bookCover.hidden = NO;
+
+        //Fade in shadow of the half-book.
+        UIView *closedPage = [self.bookCover viewWithTag:kTagRight];
+        CABasicAnimation *showAnim = [CABasicAnimation animationWithKeyPath:@"shadowOpacity"];
+        showAnim.fromValue = [NSNumber numberWithFloat:0.0];
+        showAnim.toValue = [NSNumber numberWithFloat:0.25];
+        showAnim.duration = kBookAnimationTime/4.0;
+        [closedPage.layer addAnimation:showAnim forKey:@"shadowOpacity"];
+        closedPage.layer.shadowOpacity = 0.25;
+        
+        //Fade out shadow of the book cover
+        CABasicAnimation *hideAnim = [CABasicAnimation animationWithKeyPath:@"shadowOpacity"];
+        hideAnim.fromValue = [NSNumber numberWithFloat:0.25];
+        hideAnim.toValue = [NSNumber numberWithFloat:0.0];
+        hideAnim.duration = kBookAnimationTime/4.0;
+        [self.containerView.layer addAnimation:hideAnim forKey:@"shadowOpacity"];
+        self.containerView.layer.shadowOpacity = 0.0;
+        
+        //    if (![self isContainerViewAtRightEdge:NO]){
+        [UIView animateWithDuration:kBookAnimationTime animations:^{
+            self.containerView.transform = CGAffineTransformMakeTranslation([self xTrasformForBookAtRightEdge], 0);
+        }];
+        //    }
+        
+        OLFlipTransition *flipTransition = [[OLFlipTransition alloc] initWithSourceView:self.openbookView destinationView:self.bookCover duration:kBookAnimationTime timingCurve:UIViewAnimationCurveEaseInOut completionAction:OLTransitionActionShowHide];
+        flipTransition.flippingPageShadowOpacity = 0;
+        flipTransition.style = OLFlipStyleDirectionBackward;
+        [flipTransition perform:^(BOOL finished){
+            self.animating = NO;
+            
+            CABasicAnimation *cornerAnim = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+            cornerAnim.fromValue = @0;
+            cornerAnim.toValue = @3;
+            cornerAnim.duration = kBookAnimationTime/4.0;
+            cornerAnim.removedOnCompletion = NO;
+            cornerAnim.fillMode = kCAFillModeForwards;
+            [self.fakeShadowView.layer addAnimation:cornerAnim forKey:@"cornerRadius"];
+            
+            self.bookClosed = YES;
+        }];
+    }
+}
+
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
 

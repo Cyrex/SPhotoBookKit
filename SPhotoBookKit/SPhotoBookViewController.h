@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)scrollBookViewControllerToIndex:(NSInteger)index;
 
+- (void)closeBookPhotoManual;
+
 @end
 
 
