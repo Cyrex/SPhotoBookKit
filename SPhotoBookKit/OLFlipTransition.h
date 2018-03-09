@@ -97,3 +97,13 @@
 - (UIViewController *)popViewControllerWithFlipStyle:(OLFlipStyle)style;
 
 @end
+
+
+@interface OLFlipTransition (Private)
+
+- (void)animateFlip1:(BOOL)isFallingBack fromProgress:(CGFloat)fromProgress toProgress:(CGFloat)toProgress withCompletion:(void (^)(BOOL finished))completion;
+- (void)animateFlip2:(BOOL)isFallingBack fromProgress:(CGFloat)fromProgress withCompletion:(void (^)(BOOL finished))completion;
+- (void)transitionDidComplete:(BOOL)completed;
+- (void)cleanupLayers;
+
+@end
