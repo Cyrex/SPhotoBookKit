@@ -22,3 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Security
 <in case of vulnerabilities.>
+
+## [1.0.1](https://github.com/Cyrex/SPhotoBookKit/releases/tag/1.0.1) (3/09/2018)
+### Added
+- add method for close book photo view manual.
