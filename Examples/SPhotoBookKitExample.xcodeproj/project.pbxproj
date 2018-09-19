@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		362306A920271A9C0058A7FF /* SPhotoBookKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 362306A820271A9C0058A7FF /* SPhotoBookKitExampleTests.m */; };
+		36272841215257240032F6B6 /* SPhotoBookKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524E3DACE52DE1DA93A326BF /* SPhotoBookKit.framework */; };
+		36272842215257240032F6B6 /* SPhotoBookKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 524E3DACE52DE1DA93A326BF /* SPhotoBookKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -27,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = SPhotoBookKitExample;
+		};
+		36272843215257240032F6B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70A6A66B261667EFFD7F8E96 /* SPhotoBookKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3601B55A200C90960011CCAE;
+			remoteInfo = SPhotoBookKit;
 		};
 		64FBE1E5ABB709C053F6752D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -58,6 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				36272842215257240032F6B6 /* SPhotoBookKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +113,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				36272841215257240032F6B6 /* SPhotoBookKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +238,7 @@
 			);
 			dependencies = (
 				6F0E756C8A9F9607CF09019C /* PBXTargetDependency */,
+				36272844215257240032F6B6 /* PBXTargetDependency */,
 			);
 			name = SPhotoBookKitExample;
 			productName = SPhotoBookKitExample;
@@ -240,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = S;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = ZhiweiSun;
 				TargetAttributes = {
 					362306A520271A9C0058A7FF = {
@@ -344,6 +356,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* SPhotoBookKitExample */;
 			targetProxy = 362306AB20271A9C0058A7FF /* PBXContainerItemProxy */;
+		};
+		36272844215257240032F6B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPhotoBookKit;
+			targetProxy = 36272843215257240032F6B6 /* PBXContainerItemProxy */;
 		};
 		6F0E756C8A9F9607CF09019C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -463,12 +480,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -516,12 +535,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -561,7 +582,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SPhotoBookKitExample/SPhotoBookKitExample-Prefix.pch";
 				INFOPLIST_FILE = "SPhotoBookKitExample/SPhotoBookKitExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.demo.SPhotoBookKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,7 +604,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SPhotoBookKitExample/SPhotoBookKitExample-Prefix.pch";
 				INFOPLIST_FILE = "SPhotoBookKitExample/SPhotoBookKitExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.demo.SPhotoBookKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

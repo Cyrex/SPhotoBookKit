@@ -8,7 +8,7 @@
 //  Description:
 //
 //  History:
-//      09/19/2018: Created by Cyrex on 09/19/2018
+//      03/06/2018: Created by Cyrex on 03/06/2018
 //
 
 #import <UIKit/UIKit.h>
@@ -21,7 +21,11 @@ FOUNDATION_EXPORT const unsigned char SPhotoBookKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SPhotoBookKit/PublicHeader.h>
 #if __has_include(<SPhotoBookKit/SPhotoBookKit.h>)
-// #import <SPhotoBookKit/PublicHeader.h>
+    #import <SPhotoBookKit/SPBookViewController.h>
+    #import <SPhotoBookKit/SPBookContentViewController.h>
+    #import <SPhotoBookKit/SPBookCoverView.h>
 #else
-// #import "PublicHeader.h"
+    #import "SPBookViewController.h"
+    #import "SPBookContentViewController.h"
+    #import "SPBookCoverView.h"
 #endif
