@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		36272858215257540032F6B6 /* UIImage+SPhotoBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 36272845215257540032F6B6 /* UIImage+SPhotoBook.m */; };
-		36272859215257540032F6B6 /* SPhotoBookKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36272846215257540032F6B6 /* SPhotoBookKit.xcassets */; };
 		3627285A215257540032F6B6 /* OLAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 36272847215257540032F6B6 /* OLAnimation.h */; };
 		3627285B215257540032F6B6 /* OLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36272848215257540032F6B6 /* OLAnimation.m */; };
 		3627285D215257540032F6B6 /* UIImage+SPhotoBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 3627284A215257540032F6B6 /* UIImage+SPhotoBook.h */; };
@@ -56,7 +55,6 @@
 /* Begin PBXFileReference section */
 		3601B55B200C90960011CCAE /* SPhotoBookKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPhotoBookKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36272845215257540032F6B6 /* UIImage+SPhotoBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SPhotoBook.m"; sourceTree = "<group>"; };
-		36272846215257540032F6B6 /* SPhotoBookKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SPhotoBookKit.xcassets; sourceTree = "<group>"; };
 		36272847215257540032F6B6 /* OLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLAnimation.h; sourceTree = "<group>"; };
 		36272848215257540032F6B6 /* OLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLAnimation.m; sourceTree = "<group>"; };
 		3627284A215257540032F6B6 /* UIImage+SPhotoBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SPhotoBook.h"; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 				3627287221525FDB0032F6B6 /* SPBookContentViewController.m */,
 				362728792152618A0032F6B6 /* SPBookCoverView.h */,
 				3627287A2152618A0032F6B6 /* SPBookCoverView.m */,
-				36272846215257540032F6B6 /* SPhotoBookKit.xcassets */,
 				36272875215260ED0032F6B6 /* SPBookViewController.h */,
 				36272876215260ED0032F6B6 /* SPBookViewController.m */,
 				3627284A215257540032F6B6 /* UIImage+SPhotoBook.h */,
@@ -276,7 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36272859215257540032F6B6 /* SPhotoBookKit.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
